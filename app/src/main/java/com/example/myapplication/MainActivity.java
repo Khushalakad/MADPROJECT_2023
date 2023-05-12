@@ -63,3 +63,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
+            if (((player == 1 && count == 9) && rf == 0) && player == gameState[tag]) {
+                v.setImageDrawable(null);
+                Toast.makeText(this, "fun1", Toast.LENGTH_LONG).show();
+                gameState[tag] = -1;
+                rf = 1;
+            }
