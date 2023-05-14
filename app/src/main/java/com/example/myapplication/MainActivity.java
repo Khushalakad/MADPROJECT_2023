@@ -69,3 +69,41 @@ public class MainActivity extends AppCompatActivity {
                 gameState[tag] = -1;
                 rf = 1;
             }
+            else if ((player == 1 && rf == 1) && count == 9) {
+                v.setImageResource(R.drawable.black);
+                gameState[tag] = player;
+                player = 0;
+                rf = 0;
+                Toast.makeText(this, "fun2", Toast.LENGTH_LONG).show();
+                for (int i = 0; i < winningState.length; i++) {
+                    if (gameState[winningState[i][0]] == gameState[winningState[i][1]] &&
+                            gameState[winningState[i][1]] == gameState[winningState[i][2]]
+                            && gameState[winningState[i][0]] > -1 && (tag == winningState[i][0] || tag == winningState[i][1] || tag == winningState[i][2])) {
+                        flag = 1;
+                        Toast.makeText(this, "fun9", Toast.LENGTH_LONG).show();
+
+                    }
+                }
+
+            } else if (((player == 0 && count == 9) && rf == 0) && player == gameState[tag]) {
+                v.setImageDrawable(null);
+                rf = 1;
+                Toast.makeText(this, "fun3", Toast.LENGTH_LONG).show();
+                gameState[tag] = -1;
+            } else if ((player == 0 && rf == 1) && count == 9) {
+                v.setImageResource(R.drawable.red2);
+                gameState[tag] = player;
+                player = 1;
+                rf = 0;
+                Toast.makeText(this, "fun4", Toast.LENGTH_LONG).show();
+                for (int i = 0; i < winningState.length; i++) {
+                    if (gameState[winningState[i][0]] == gameState[winningState[i][1]] &&
+                            gameState[winningState[i][1]] == gameState[winningState[i][2]]
+                            && gameState[winningState[i][0]]>-1&&(tag==winningState[i][0]||tag==winningState[i][1] || tag == winningState[i][2])) {
+                        flag = 2;
+                        Toast.makeText(this, "fun10", Toast.LENGTH_LONG).show();
+
+                    }
+                }
+            }
+        }
