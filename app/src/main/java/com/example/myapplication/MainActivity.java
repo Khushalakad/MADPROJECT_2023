@@ -107,3 +107,50 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+        else if (flag == 1 && gameState[tag] == 0) {
+            v.setImageDrawable(null);
+            Toast.makeText(this, "fun11", Toast.LENGTH_LONG).show();
+            gameState[tag] = -1;
+            flag = 0;
+            bcount = bcount + 1;
+        }
+        else if (flag == 2 && gameState[tag] == 1) {
+            v.setImageDrawable(null);
+            Toast.makeText(this, "fun12", Toast.LENGTH_LONG).show();
+            gameState[tag] = -1;
+            flag = 0;
+            rcount = rcount + 1;
+        }
+
+        if(bcount==7) {
+            Toast.makeText(this, "player 1 wins", Toast.LENGTH_LONG).show();
+            flag = 3;
+        }
+        if(rcount==7) {
+            flag = 3;
+            Toast.makeText(this, "player 2 wins", Toast.LENGTH_LONG).show();
+        }
+
+    }
+    /* public void play_again(View view){
+         GridLayout gridLayout=findViewById(R.id.gridLayout);
+         int total_image=gridLayout.getChildCount();
+         for(int i=0;i<total_image;i++){
+             ImageView p=(ImageView)gridLayout.getChildAt(i);
+             p.setImageDrawable(null);
+         }
+         flag=0;
+         rf=0;
+         rcount=0;
+         count=0;
+         bcount=0;
+         for(int i=0;i<gameState.length;i++){
+             gameState[i]=-1;
+         }
+     }*/
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
