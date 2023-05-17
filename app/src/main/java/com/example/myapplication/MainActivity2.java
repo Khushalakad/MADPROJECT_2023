@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
     private Button button;
+     MediaPlayer mp=MediaPlayer.create(MainActivity2.this, R.raw.stranger);
 
 
     @Override
