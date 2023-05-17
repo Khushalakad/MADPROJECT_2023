@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
          for(int i=0;i<total_image;i++){
              ImageView p=(ImageView)gridLayout.getChildAt(i);
              p.setImageDrawable(null);
-         }
+         } */
         
     @Override
     protected void onCreate(Bundle savedInstanceState) {
