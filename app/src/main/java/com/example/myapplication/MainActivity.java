@@ -139,15 +139,7 @@ public class MainActivity extends AppCompatActivity {
              ImageView p=(ImageView)gridLayout.getChildAt(i);
              p.setImageDrawable(null);
          }
-         flag=0;
-         rf=0;
-         rcount=0;
-         count=0;
-         bcount=0;
-         for(int i=0;i<gameState.length;i++){
-             gameState[i]=-1;
-         }
-     }*/
+        
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
