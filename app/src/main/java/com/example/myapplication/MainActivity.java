@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 rf = 0;
                 Toast.makeText(this, "fun2", Toast.LENGTH_LONG).show();
                 for (int i = 0; i < winningState.length; i++) {
-                    if (gameState[winningState[i][0]] == gameState[winningState[i][1]] &&
-                            gameState[winningState[i][1]] == gameState[winningState[i][2]]
+                    if ((gameState[winningState[i][0]] == gameState[winningState[i][1]]) &&
+                            (gameState[winningState[i][1]] == gameState[winningState[i][2]])
                             && gameState[winningState[i][0]] > -1 && (tag == winningState[i][0] || tag == winningState[i][1] || tag == winningState[i][2])) {
                         flag = 1;
                         Toast.makeText(this, "fun9", Toast.LENGTH_LONG).show();
