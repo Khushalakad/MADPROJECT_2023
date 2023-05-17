@@ -132,13 +132,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    /* public void play_again(View view){
-         GridLayout gridLayout=findViewById(R.id.gridLayout);
-         int total_image=gridLayout.getChildCount();
-         for(int i=0;i<total_image;i++){
-             ImageView p=(ImageView)gridLayout.getChildAt(i);
-             p.setImageDrawable(null);
-         } */
+    
         
     @Override
     protected void onCreate(Bundle savedInstanceState) {
