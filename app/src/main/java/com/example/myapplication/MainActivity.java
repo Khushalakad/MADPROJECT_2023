@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if(rcount==7) {
             flag = 3;
-            Toast.makeText(this, "player 3 wins", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "player 2 wins", Toast.LENGTH_LONG).show();
         }
 
     }
