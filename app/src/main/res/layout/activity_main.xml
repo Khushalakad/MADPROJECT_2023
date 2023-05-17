@@ -9,7 +9,7 @@
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="406dp"
+        android:layout_width="46dp"
         android:layout_height="413dp"
         android:background="@drawable/nine_men2"
         app:columnCount="7"
